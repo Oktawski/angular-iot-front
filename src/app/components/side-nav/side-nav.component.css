@@ -4,4 +4,9 @@
 
 .sidenav {
     width: 300px;
+    max-width: 30%;
+}
+
+.vertical-spacer{
+    width: 100%;
 }
