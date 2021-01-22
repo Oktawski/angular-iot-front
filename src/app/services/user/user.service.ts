@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpParams, HttpResponse} from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { User } from '../models/user.model';
 import {first, map} from 'rxjs/operators';
+import {User} from '../../models/user.model';
 
 const baseUrl = 'https://localhost:8015 ';
 
