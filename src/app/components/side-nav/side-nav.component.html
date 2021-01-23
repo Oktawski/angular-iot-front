@@ -7,12 +7,23 @@
         <mat-toolbar>Menu</mat-toolbar>
         <mat-nav-list>
             <a mat-list-item>1</a>
+            <mat-divider></mat-divider>
             <a mat-list-item>2</a>
+            <mat-divider></mat-divider>
             <a mat-list-item>3</a>
-            <div class="mi-arrow-drop-down" *ngIf="loggedIn"> This will be dropdown
-                <a mat-list-item>1.1</a>
-                <a mat-list-item>1.2</a>
-            </div>
+            <mat-divider></mat-divider>
+
+            <mat-expansion-panel *ngIf="isSignedIn()">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Devices
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <a mat-list-item>Relays</a>
+                <mat-divider></mat-divider>
+                <a mat-list-item>Lights</a>
+                <mat-divider></mat-divider>
+            </mat-expansion-panel>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
@@ -23,6 +34,7 @@
                 <mat-icon>menu</mat-icon>
             </button>
         </mat-toolbar>
+
         <ng-content></ng-content>
 
     </mat-sidenav-content>
