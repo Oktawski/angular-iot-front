@@ -6,3 +6,12 @@
 .form-field{
     width: 100%;
 }
+
+.button-holder{
+    text-align: center;
+}
+
+.mat-flat-button-wide{
+    @extend mat-flat-button;
+    width: 30%;
+}

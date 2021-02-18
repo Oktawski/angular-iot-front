@@ -10,7 +10,9 @@ import {User} from '../../models/user.model';
 export class RegisterComponent implements OnInit {
     user: User;
 
-    constructor(private userService: UserService) { }
+    constructor(private userService: UserService) {
+        this.user = new User();
+    }
 
     ngOnInit(): void {
     }

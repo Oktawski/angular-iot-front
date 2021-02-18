@@ -6,3 +6,15 @@
 .form-field{
     width: 100%;
 }
+
+.mat-card-flat-center{
+    @extend mat-card-flat;
+    text-align: center;
+}
+
+.mat-flat-button-wide{
+    @extend mat-flat-button;
+    width: 30%;
+}
+
+
